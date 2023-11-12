@@ -1,5 +1,12 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  const y = word.split("");
+  const z=[];
+  y.forEach((e) => (z.unshift(e)))
+  console.log(z);
+  return (y.toString() == z.toString())
+  //if (y==z) {return true}
+  //else {return false}
 }
 
 /* 
@@ -13,6 +20,8 @@ function isPalindrome(word) {
 // You can run `node index.js` to view these console logs
 if (require.main === module) {
   // add your own custom tests in here
+  //show string array
+  //console.log(y)
   console.log("Expecting: true");
   console.log("=>", isPalindrome("racecar"));
 
